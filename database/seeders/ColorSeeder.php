@@ -13,6 +13,6 @@ class ColorSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

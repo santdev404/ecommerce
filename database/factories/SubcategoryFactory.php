@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Image;
+use App\Models\Subcategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ImageFactory extends Factory
+class SubcategoryFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Image::class;
+    protected $model = Subcategory::class;
 
     /**
      * Define the model's default state.
@@ -21,8 +21,9 @@ class ImageFactory extends Factory
      */
     public function definition()
     {
-        return [
-            //
+        return 
+        [
+        'image'=> 'subcategories/' .$this->faker->image('storage/app/public/subcategories', 640, 480, null, false)
         ];
     }
 }
